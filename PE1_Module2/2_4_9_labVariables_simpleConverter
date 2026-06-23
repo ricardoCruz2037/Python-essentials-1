@@ -1,0 +1,35 @@
+# 2.4.9   LAB   Variables ‒ a simple converter
+# Miles and kilometers are units of length or distance.
+# Bearing in mind that 1 mile is equal to approximately 1.61 kilometers, complete the program in the editor so that it converts
+#    miles to kilometers;
+#    kilometers to miles.
+#
+# Do not change anything in the existing code. Write your code in the places indicated by ###. Test your program with the data we've provided in the source code.
+# Pay particular attention to what is going on inside the print() function. Analyze how we provide multiple arguments to the function, and how we output the expected data.
+# Note that some of the arguments inside the print() function are strings (e.g., "miles is", whereas some other are variables (e.g., miles).
+
+kilometers = 12.25
+miles = 7.38
+miles_to_kilometers = miles * 1.60934
+kilometers_to_miles = kilometers / 1.60934
+print(miles, "miles is equal to", round(miles_to_kilometers, 2), "kilometers")
+print(kilometers, "kilometers is equal to", round(kilometers_to_miles, 2), "miles")
+print("\n")
+
+# SANDBOX
+# USD to EUR and EUR to USD
+sud = 10.0
+eur = 9.0
+sud_to_eur = sud * 0.9
+eur_to_sud = eur / 0.9
+print(sud, "USD is equal to", round(sud_to_eur, 2), "EUR")
+print(eur, "EUR is equal to", round(eur_to_sud, 2), "USD")
+print("\n")
+
+# Farenheit to Celsius and Celsius to Fahrenheit
+farenheit = 100.0
+celsius = 37.78
+farenheit_to_celsius = (farenheit - 32) * 5/9
+celsius_to_farenheit = (celsius * 9/5) + 32
+print(farenheit, "Fahrenheit is equal to", round(farenheit_to_celsius, 2), "Celsius")
+print(celsius, "Celsius is equal to", round(celsius_to_farenheit, 2), "Fahrenheit") 
